@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="card auth-card">
+
+        <h1 class="auth-title">Create New Task</h1>
+        <p class="auth-subtitle">Add and organize your workflow efficiently.</p>
+
+        <form method="post" action="/tasks">
+
+            <div class="input-group">
+                <label>Task Title</label>
+                <input type="text" name="title" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+                Create Task
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

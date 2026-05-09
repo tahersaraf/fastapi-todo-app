@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+        <div class="logo"><a href="/">TaskFlow</a></div>
+    </div>
+</div>
+
+
+<div class="auth-container">
+
+    <div class="card auth-card">
+
+        <h1 class="auth-title">Create Account</h1>
+        <p class="auth-subtitle">Start organizing your productivity today.</p>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="post" action="/register">
+
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="auth-footer">
+            Already have an account? <a href="/login" class="auth-link">Login here</a>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
