@@ -5,10 +5,8 @@ const API = "http://localhost:8000"
 export default function App() {
   const [todos, setTodos] = useState([]);
   const [title, setTitle] = useState("");
-
   const [editingId, setEditingId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
